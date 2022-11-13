@@ -1,0 +1,5 @@
+panic terminates the flow of control.
+you call Recover
+to pick up the control flow again.
+ - mrig about go programming language
+ 
