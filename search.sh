@@ -7,7 +7,7 @@ term="${1:-}"
 ls -1 | grep -E '^[0-9]+$' | sort -n |
 while IFS= read -r f; do
   grep -qi -- "$term" "$f" || continue
-  printf '%s\n' "$f"
+  printf '%s) ' "$f"
   cat -- "$f"
-  printf '\n\n'
+  printf '\n'
 done
